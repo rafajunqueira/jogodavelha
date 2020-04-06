@@ -5,45 +5,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <title>Bora jogar uma partida, AMOR?</title>
+    <title>É o jogo da velha, bicho!</title>
   </head>
   <body>
-    <img src="r.jpg" alt="rafa" class="image" hidden="true" id="img1">
-    <img src="b.jpg" alt="bi" class="image" hidden="true" id="img2">
+    <img src="r.png" alt="x" class="image" hidden="true" id="img1">
+    <img src="b.png" alt="o" class="image" hidden="true" id="img2">
     <main>
       <div id="title">
         <p>Jogo da #</p>
         <div id="btn-players">
           <button id="playerX" value='X' class="choosePlayer"
             onclick="setPlayer(this)"><img id="playerRafa" class="image"
-              src=r.jpg></button>
+              src=r.png></button>
           <button id="playerO" value='O' class="choosePlayer"
             onclick="setPlayer(this)"><img id="playerBi" class="image"
-              src=b.jpg></button>
+              src=b.png></button>
         </div>
         <section id="board">
           <div id="gameBord-container" class="gameBord-container">
             <table id='table'>
               <tr>
-                <td id="l1c1" class="bloco" onclick="blockTest(this)"></td>
-                <td id="l1c2" class="bloco" onclick="blockTest(this)"></td>
-                <td id="l1c3" class="bloco" onclick="blockTest(this)"></td>
+                <td id="1" class="bloco" onclick="blockTest(this)"></td>
+                <td id="2" class="bloco" onclick="blockTest(this)"></td>
+                <td id="3" class="bloco" onclick="blockTest(this)"></td>
               </tr>
               <tr>
-                <td id="l2c1" class="bloco" onclick="blockTest(this)"></td>
-                <td id="l2c2" class="bloco" onclick="blockTest(this)"></td>
-                <td id="l2c3" class="bloco" onclick="blockTest(this)"></td>
+                <td id="4" class="bloco" onclick="blockTest(this)"></td>
+                <td id="5" class="bloco" onclick="blockTest(this)"></td>
+                <td id="6" class="bloco" onclick="blockTest(this)"></td>
               </tr>
               <tr>
-                <td id="l3c1" class="bloco" onclick="blockTest(this)"></td>
-                <td id="l3c2" class="bloco" onclick="blockTest(this)"></td>
-                <td id="l3c3" class="bloco" onclick="blockTest(this)"></td>
+                <td id="7" class="bloco" onclick="blockTest(this)"></td>
+                <td id="8" class="bloco" onclick="blockTest(this)"></td>
+                <td id="9" class="bloco" onclick="blockTest(this)"></td>
               </tr>
             </table>
           </div>
         </section>
         <div id="btnsConfig">
-          <button onclick="clearScreen()" id="limpar">LIMPAR</button>
+          <button onclick="clearScreen()" class="button" id="limpar">LIMPAR</button>
         </div>
       </main>
       <div id="root"></div>
