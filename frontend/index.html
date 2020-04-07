@@ -10,44 +10,49 @@
   <body>
     <img src="r.png" alt="x" class="image" hidden="true" id="img1">
     <img src="b.png" alt="o" class="image" hidden="true" id="img2">
-    <main>
+    <div id="main">
       <div id="title">
-        <p>Jogo da #</p>
+        <p>JOGO DA #</p>
+        <div id="separe"></div>
         <div id="btn-players">
           <button id="playerX" value='X' class="choosePlayer"
             onclick="setPlayer(this)"><img id="playerRafa" class="image"
               src=r.png></button>
+          <p id="placarO" class="placar">0</p>
+
           <button id="playerO" value='O' class="choosePlayer"
             onclick="setPlayer(this)"><img id="playerBi" class="image"
               src=b.png></button>
+          <p id="placarX" class="placar">0</p>
         </div>
-        <section id="board">
-          <div id="gameBord-container" class="gameBord-container">
-            <table id='table'>
-              <tr>
-                <td id="1" class="bloco" onclick="blockTest(this)"></td>
-                <td id="2" class="bloco" onclick="blockTest(this)"></td>
-                <td id="3" class="bloco" onclick="blockTest(this)"></td>
-              </tr>
-              <tr>
-                <td id="4" class="bloco" onclick="blockTest(this)"></td>
-                <td id="5" class="bloco" onclick="blockTest(this)"></td>
-                <td id="6" class="bloco" onclick="blockTest(this)"></td>
-              </tr>
-              <tr>
-                <td id="7" class="bloco" onclick="blockTest(this)"></td>
-                <td id="8" class="bloco" onclick="blockTest(this)"></td>
-                <td id="9" class="bloco" onclick="blockTest(this)"></td>
-              </tr>
-            </table>
-          </div>
-        </section>
-        <div id="btnsConfig">
-          <button onclick="clearScreen()" class="button" id="limpar">LIMPAR</button>
+      </div>
+      <section id="board">
+        <div id="gameBord-container" class="gameBord-container">
+          <table id='table'>
+            <tr>
+              <td id="1" class="bloco" onclick="blockTest(this)"></td>
+              <td id="2" class="bloco" onclick="blockTest(this)"></td>
+              <td id="3" class="bloco" onclick="blockTest(this)"></td>
+            </tr>
+            <tr>
+              <td id="4" class="bloco" onclick="blockTest(this)"></td>
+              <td id="5" class="bloco" onclick="blockTest(this)"></td>
+              <td id="6" class="bloco" onclick="blockTest(this)"></td>
+            </tr>
+            <tr>
+              <td id="7" class="bloco" onclick="blockTest(this)"></td>
+              <td id="8" class="bloco" onclick="blockTest(this)"></td>
+              <td id="9" class="bloco" onclick="blockTest(this)"></td>
+            </tr>
+          </table>
         </div>
-      </main>
+      </section>
+      <div id="btnsConfig">
+        <button onclick="clearScreen()" class="button" id="limpar">REINICIAR</button>
+        <button onclick="clearScore()" class="button" id="limpar">ZERAR PLACAR</button>
+      </div>
+      <footer>Criado por Rafael Junqueira</footer>
       <div id="root"></div>
-      <footer></footer>
       <script type="text/javascript" src="index.js"></script>
     </body>
   </html>
