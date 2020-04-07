@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 var gameIsFinished = false;
+=======
+>>>>>>> aee6bd3948d6f93b03c10a6fcfd1bf53ff42ed69
 var counter = 0;
 var ctrl = undefined;
 var img = document.getElementsByClassName('image');
