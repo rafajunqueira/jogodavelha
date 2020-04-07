@@ -1,6 +1,3 @@
-var playerX = document.getElementById("playerX");
-var playerO = document.getElementById("playerO");
-
 var counter = 0;
 var ctrl = undefined;
 
