@@ -161,7 +161,6 @@ function endGame(winnerLine, line, ID) {
             case 'v8':
                 winningLine = v8;
                 break;
-
         }
         console.log(`Linha vencedora: ${line} : ${winningLine}`);
         [...winningLine].forEach(e => {
