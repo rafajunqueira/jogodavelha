@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 var gameIsFinished = false;
-=======
->>>>>>> aee6bd3948d6f93b03c10a6fcfd1bf53ff42ed69
 var counter = 0;
 var ctrl = undefined;
 var img = document.getElementsByClassName('image');
@@ -53,7 +50,7 @@ function isWinner(blocksFilled, ID) {
     combination.forEach((e, index) => {
         if (ID === 1) {
             actualScore = 'placarX';
-        } else
+        } else 
             actualScore = 'placarO';
         if (e) {
             gameIsFinished = true;
